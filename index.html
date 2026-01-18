@@ -721,7 +721,7 @@ const QUESTIONS_POOL = [
     options: ["Vollstrahl Wasser abgeben", "Freischalten veranlassen und Bereich sichern", "Metallgeräte ansetzen", "Leitung herunterziehen"],
     correct: 1,
     explain: "Vorrangig ist: Gefahrenbereich absperren und Freischalten durch Betreiber/EVU veranlassen. Erst wenn die Anlage sicher ist (und geerdet/kurzgeschlossen bzw. freigegeben), werden weitere Maßnahmen durchgeführt."
-  }
+  },
     // ================= ERWEITERUNG AUF 80 FRAGEN =================
 
   // -------- FwDV 2 – Brennen & Löschen (Vertiefung) --------
@@ -798,7 +798,6 @@ const QUESTIONS_POOL = [
     correct: 0,
     explain: "Im Schema AAAA C EEEE steht das zweite „A“ für Angstreaktionen. Gemeint sind psychische Stress- und Panikreaktionen bei Betroffenen oder Einsatzkräften, die das sichere Vorgehen und die Kommunikation direkt beeinflussen."
   },
-
   {
     id: "q043",
     area: "FwDV 2 – Gefahren (AAAACEEEE)",
@@ -912,401 +911,398 @@ const QUESTIONS_POOL = [
     correct: 1,
     explain: "Einsatzlagen ändern sich ständig (Feuerausbreitung, Einsturz, Personenlage). Führung bedeutet, Maßnahmen regelmäßig zu überprüfen und anzupassen."
   },
-
-// ================= ERWEITERUNG AUF 80 FRAGEN (q051–q080) =================
-
 // -------- AAAA C EEEE – vollständig (Bedeutung + Maßnahmen) --------
-{
-  id: "q051",
-  area: "FwDV 2 – Gefahren (AAAA C EEEE)",
-  source: "Truppführer: Gefahren der Einsatzstelle",
-  text: "Wofür steht das dritte „A“ im Schema AAAA C EEEE?",
-  options: ["Ausbreitung", "Atomare Strahlung", "Absperren", "Ausrüstung"],
-  correct: 1,
-  explain: "Das dritte „A“ steht für Atomare Strahlung. In der Praxis bedeutet das: Strahlengefahr erkennen (Kennzeichnungen/Anlagen), Abstand halten und Spezialkräfte bzw. Fachberatung hinzuziehen."
-},
-{
-  id: "q052",
-  area: "FwDV 2 – Gefahren (AAAA C EEEE)",
-  source: "Truppführer: Gefahren der Einsatzstelle",
-  text: "Wofür steht das vierte „A“ im Schema AAAA C EEEE?",
-  options: ["Ausbreitung", "Absturz", "Atemschutz", "Alarmierung"],
-  correct: 0,
-  explain: "Das vierte „A“ steht für Ausbreitung (z. B. Feuer, Rauch, Gase, Flüssigkeiten). Taktisch heißt das: Riegelstellungen/Abschottung, Lüftungsmaßnahmen nur kontrolliert und Lage fortlaufend beurteilen."
-},
-{
-  id: "q053",
-  area: "FwDV 2 – Gefahren (AAAA C EEEE)",
-  source: "Truppführer: Gefahren der Einsatzstelle",
-  text: "Welcher Buchstabe im Schema steht für „Erkrankung/Verletzung“?",
-  options: ["C", "E", "A", "S"],
-  correct: 1,
-  explain: "Ein „E“ steht u. a. für Erkrankung/Verletzung. Das betrifft sowohl Betroffene als auch Einsatzkräfte und beeinflusst Sofortmaßnahmen, Eigensicherung und die Priorisierung (z. B. medizinische Erstversorgung)."
-},
-{
-  id: "q054",
-  area: "FwDV 2 – Gefahren (AAAA C EEEE)",
-  source: "Truppführer: Gefahren der Einsatzstelle",
-  text: "Welche Reihenfolge entspricht dem Grundprinzip beim Umgang mit Gefahren an der Einsatzstelle?",
-  options: [
-    "Beseitigen – Dokumentieren – Melden",
-    "Erkennen – Melden – Sichern",
-    "Handeln – Nachfragen – Abwarten",
-    "Anfahren – Aufbauen – Ablösen"
-  ],
-  correct: 1,
-  explain: "Gefahren werden zuerst erkannt, dann gemeldet und unmittelbar abgesichert. Erst danach folgen weitergehende Maßnahmen, damit niemand unnötig in den Gefahrenbereich gerät."
-},
-{
-  id: "q055",
-  area: "FwDV 2 – Gefahren (Atemgifte)",
-  source: "Truppführer: Atemgifte",
-  text: "Welche Aussage zu Atemgiften ist im Einsatz besonders wichtig?",
-  options: [
-    "Atemgifte erkennt man immer am Geruch",
-    "Atemgifte treten nur bei offenen Flammen auf",
-    "Atemgifte können auch ohne sichtbares Feuer auftreten und sind lebensgefährlich",
-    "Atemgifte sind nur bei Gefahrgut relevant"
-  ],
-  correct: 2,
-  explain: "Atemgifte können z. B. in Brandrauch, aber auch in Silos, Kanälen oder bei Motor-/Heizungsabgasen auftreten. Sie sind häufig nicht zuverlässig wahrnehmbar und erfordern konsequente Eigensicherung (z. B. Atemschutz)."
-},
-{
-  id: "q056",
-  area: "FwDV 2 – Gefahren (Explosion)",
-  source: "Truppführer: Explosion",
-  text: "Welche Maßnahme ist bei Explosionsgefahr in der Regel zuerst sinnvoll?",
-  options: [
-    "Sammelstelle im Gefahrenbereich einrichten",
-    "Zündquellen vermeiden und Bereich absperren",
-    "Türen/Fenster sofort schließen und verriegeln",
-    "Vollstrahl in den Bereich halten"
-  ],
-  correct: 1,
-  explain: "Explosionsgefahr erfordert sofortige Absperrung und das Eliminieren möglicher Zündquellen. Dadurch reduzierst du das Risiko einer Zündung und schützt Einsatzkräfte sowie Betroffene."
-},
-{
-  id: "q057",
-  area: "FwDV 2 – Gefahren (Einsturz)",
-  source: "Truppführer: Einsturz",
-  text: "Was ist bei erkennbarer Einsturzgefahr von Gebäudeteilen korrekt?",
-  options: [
-    "Gefahrenbereich kennzeichnen/absperren und nur nach Sicherungsmaßnahmen betreten",
-    "Alle Einsatzkräfte in den Bereich schicken, um schneller zu arbeiten",
-    "Einsturzgefahr ignorieren, wenn Rauchabzug gelingt",
-    "Nur Maschinist muss sich daran halten"
-  ],
-  correct: 0,
-  explain: "Bei Einsturzgefahr muss der Bereich eindeutig abgesperrt werden. Betreten ist erst nach geeigneten Sicherungsmaßnahmen zulässig, weil Einsturz dynamisch und kaum vorhersehbar sein kann."
-},
+  {
+    id: "q051",
+    area: "FwDV 2 – Gefahren (AAAA C EEEE)",
+    source: "Truppführer: Gefahren der Einsatzstelle",
+    text: "Wofür steht das dritte „A“ im Schema AAAA C EEEE?",
+    options: ["Ausbreitung", "Atomare Strahlung", "Absperren", "Ausrüstung"],
+    correct: 1,
+    explain: "Das dritte „A“ steht für Atomare Strahlung. In der Praxis bedeutet das: Strahlengefahr erkennen (Kennzeichnungen/Anlagen), Abstand halten und Spezialkräfte bzw. Fachberatung hinzuziehen."
+  },
+  {
+    id: "q052",
+    area: "FwDV 2 – Gefahren (AAAA C EEEE)",
+    source: "Truppführer: Gefahren der Einsatzstelle",
+    text: "Wofür steht das vierte „A“ im Schema AAAA C EEEE?",
+    options: ["Ausbreitung", "Absturz", "Atemschutz", "Alarmierung"],
+    correct: 0,
+    explain: "Das vierte „A“ steht für Ausbreitung (z. B. Feuer, Rauch, Gase, Flüssigkeiten). Taktisch heißt das: Riegelstellungen/Abschottung, Lüftungsmaßnahmen nur kontrolliert und Lage fortlaufend beurteilen."
+  },
+  {
+    id: "q053",
+    area: "FwDV 2 – Gefahren (AAAA C EEEE)",
+    source: "Truppführer: Gefahren der Einsatzstelle",
+    text: "Welcher Buchstabe im Schema steht für „Erkrankung/Verletzung“?",
+    options: ["C", "E", "A", "S"],
+    correct: 1,
+    explain: "Ein „E“ steht u. a. für Erkrankung/Verletzung. Das betrifft sowohl Betroffene als auch Einsatzkräfte und beeinflusst Sofortmaßnahmen, Eigensicherung und die Priorisierung (z. B. medizinische Erstversorgung)."
+  },
+  {
+    id: "q054",
+    area: "FwDV 2 – Gefahren (AAAA C EEEE)",
+    source: "Truppführer: Gefahren der Einsatzstelle",
+    text: "Welche Reihenfolge entspricht dem Grundprinzip beim Umgang mit Gefahren an der Einsatzstelle?",
+    options: [
+      "Beseitigen – Dokumentieren – Melden",
+      "Erkennen – Melden – Sichern",
+      "Handeln – Nachfragen – Abwarten",
+      "Anfahren – Aufbauen – Ablösen"
+    ],
+    correct: 1,
+    explain: "Gefahren werden zuerst erkannt, dann gemeldet und unmittelbar abgesichert. Erst danach folgen weitergehende Maßnahmen, damit niemand unnötig in den Gefahrenbereich gerät."
+  },
+  {
+    id: "q055",
+    area: "FwDV 2 – Gefahren (Atemgifte)",
+    source: "Truppführer: Atemgifte",
+    text: "Welche Aussage zu Atemgiften ist im Einsatz besonders wichtig?",
+    options: [
+      "Atemgifte erkennt man immer am Geruch",
+      "Atemgifte treten nur bei offenen Flammen auf",
+      "Atemgifte können auch ohne sichtbares Feuer auftreten und sind lebensgefährlich",
+      "Atemgifte sind nur bei Gefahrgut relevant"
+    ],
+    correct: 2,
+    explain: "Atemgifte können z. B. in Brandrauch, aber auch in Silos, Kanälen oder bei Motor-/Heizungsabgasen auftreten. Sie sind häufig nicht zuverlässig wahrnehmbar und erfordern konsequente Eigensicherung (z. B. Atemschutz)."
+  },
+  {
+    id: "q056",
+    area: "FwDV 2 – Gefahren (Explosion)",
+    source: "Truppführer: Explosion",
+    text: "Welche Maßnahme ist bei Explosionsgefahr in der Regel zuerst sinnvoll?",
+    options: [
+      "Sammelstelle im Gefahrenbereich einrichten",
+      "Zündquellen vermeiden und Bereich absperren",
+      "Türen/Fenster sofort schließen und verriegeln",
+      "Vollstrahl in den Bereich halten"
+    ],
+    correct: 1,
+    explain: "Explosionsgefahr erfordert sofortige Absperrung und das Eliminieren möglicher Zündquellen. Dadurch reduzierst du das Risiko einer Zündung und schützt Einsatzkräfte sowie Betroffene."
+  },
+  {
+    id: "q057",
+    area: "FwDV 2 – Gefahren (Einsturz)",
+    source: "Truppführer: Einsturz",
+    text: "Was ist bei erkennbarer Einsturzgefahr von Gebäudeteilen korrekt?",
+    options: [
+      "Gefahrenbereich kennzeichnen/absperren und nur nach Sicherungsmaßnahmen betreten",
+      "Alle Einsatzkräfte in den Bereich schicken, um schneller zu arbeiten",
+      "Einsturzgefahr ignorieren, wenn Rauchabzug gelingt",
+      "Nur Maschinist muss sich daran halten"
+    ],
+    correct: 0,
+    explain: "Bei Einsturzgefahr muss der Bereich eindeutig abgesperrt werden. Betreten ist erst nach geeigneten Sicherungsmaßnahmen zulässig, weil Einsturz dynamisch und kaum vorhersehbar sein kann."
+  },
 
-// -------- Elektrische Anlagen – Abstände + Sonderfälle + Löschmittelregeln --------
-{
-  id: "q058",
-  area: "Elektrische Anlagen – Annäherungsabstand",
-  source: "Truppführer: Abstände zu elektrischen Anlagen",
-  text: "Welcher Mindestabstand ist bei Niederspannung grundsätzlich einzuhalten?",
-  options: ["0,5 m", "1 m", "3 m", "5 m"],
-  correct: 1,
-  explain: "Bei Niederspannung ist ein Mindestabstand von 1 m einzuhalten. Hintergrund ist die Gefahr eines Spannungsüberschlags bzw. das Arbeiten in der Nähe spannungsführender Teile."
-},
-{
-  id: "q059",
-  area: "Elektrische Anlagen – Annäherungsabstand (HS)",
-  source: "Truppführer: Abstände zu elektrischen Anlagen",
-  text: "Welche Annäherung ist bei Hochspannung bis 110 kV höchstens zulässig?",
-  options: ["1 m", "2 m", "3 m", "5 m"],
-  correct: 2,
-  explain: "Bei Hochspannung bis 110 kV gilt ein Annäherungsabstand von 3 m. Der Abstand schützt vor Lichtbogen/Stromüberschlag, der auch ohne Berührung auftreten kann."
-},
-{
-  id: "q060",
-  area: "Elektrische Anlagen – Annäherungsabstand (HS)",
-  source: "Truppführer: Abstände zu elektrischen Anlagen",
-  text: "Welche Annäherung ist bei Hochspannung >110 kV bis 230 kV höchstens zulässig?",
-  options: ["2 m", "3 m", "4 m", "6 m"],
-  correct: 2,
-  explain: "Für >110 kV bis 230 kV sind 4 m Abstand einzuhalten. Mit steigender Spannung steigt die Überschlagsgefahr, daher werden die Abstände größer."
-},
-{
-  id: "q061",
-  area: "Elektrische Anlagen – Annäherungsabstand (HS)",
-  source: "Truppführer: Abstände zu elektrischen Anlagen",
-  text: "Welche Annäherung ist bei Hochspannung >230 kV bis 400 kV höchstens zulässig?",
-  options: ["3 m", "4 m", "5 m", "8 m"],
-  correct: 2,
-  explain: "Für >230 kV bis 400 kV sind 5 m Abstand einzuhalten. Das ist ein häufig abgefragter Wert, weil er in der Praxis zur Absperrentscheidung herangezogen wird."
-},
-{
-  id: "q062",
-  area: "Elektrische Anlagen – Freileitung am Boden",
-  source: "Truppführer: Freileitungen/Schrittspannung",
-  text: "Welche Besonderheit gilt, wenn eine herabhängende Leitung den Boden berührt?",
-  options: [
-    "Gefahr nur bei direkter Berührung",
-    "Gefahr durch Schrittspannung: Abstand mindestens 10 m einhalten",
-    "Gefahr ist geringer, weil die Leitung geerdet ist",
-    "Man kann die Leitung mit Holz anfassen"
-  ],
-  correct: 1,
-  explain: "Berührt eine Leitung den Boden, kann sich ein Spannungsrichter bilden – gefährlich ist dann auch die Spannung zwischen den Füßen (Schrittspannung). Deshalb ist ein Abstand von mindestens 10 m einzuhalten und der Bereich abzusperren."
-},
-{
-  id: "q063",
-  area: "Elektrische Anlagen – Unklare Spannung",
-  source: "Truppführer: Abstandsregel bei unbekannter Spannung",
-  text: "Welche Regel ist bei unbekannter Spannungslage (z. B. beschädigte Freileitung) sinnvoll?",
-  options: [
-    "1 m Abstand reicht immer",
-    "5 m Abstand einhalten und absperren, bis die Anlage gesichert ist",
-    "Nur Maschinist hält Abstand, Trupps dürfen näher ran",
-    "Vollstrahl einsetzen, um Funken zu vermeiden"
-  ],
-  correct: 1,
-  explain: "Wenn nicht absolut sicher ist, dass die Anlage spannungsfrei ist, gilt: Abstand halten und absperren. Praktisch wird bei unbekannter Spannungslage ein großzügiger Abstand (typisch 5 m) gewählt, bis Fachkräfte freigeben."
-},
-{
-  id: "q064",
-  area: "Elektrische Anlagen – Löschangriff Wasser (C-Strahlrohr)",
-  source: "Truppführer: Löschmittelabstände Wasser",
-  text: "Welche Mindestabstände gelten beim Einsatz eines genormten C-Strahlrohrs mit Sprühstrahl?",
-  options: [
-    "Niederspannung 1 m, Hochspannung 5 m",
-    "Niederspannung 5 m, Hochspannung 10 m",
-    "Niederspannung 0,5 m, Hochspannung 3 m",
-    "Niederspannung 3 m, Hochspannung 6 m"
-  ],
-  correct: 0,
-  explain: "Beim Sprühstrahl sind die Tropfen getrennt, dadurch sinkt die Leitfähigkeit gegenüber einem kompakten Strahl. Trotzdem gelten Mindestabstände: 1 m bei Niederspannung und 5 m bei Hochspannung."
-},
-{
-  id: "q065",
-  area: "Elektrische Anlagen – Löschangriff Wasser (C-Strahlrohr)",
-  source: "Truppführer: Löschmittelabstände Wasser",
-  text: "Welche Mindestabstände gelten beim Einsatz eines genormten C-Strahlrohrs mit Vollstrahl?",
-  options: [
-    "Niederspannung 1 m, Hochspannung 5 m",
-    "Niederspannung 5 m, Hochspannung 10 m",
-    "Niederspannung 2 m, Hochspannung 4 m",
-    "Niederspannung 3 m, Hochspannung 6 m"
-  ],
-  correct: 1,
-  explain: "Ein kompakter Vollstrahl leitet sehr gut und begünstigt Überschlag. Daher gelten größere Abstände: 5 m bei Niederspannung und 10 m bei Hochspannung."
-},
-{
-  id: "q066",
-  area: "Elektrische Anlagen – Schaum",
-  source: "Truppführer: Löschmittel Schaum",
-  text: "Welche Aussage zum Einsatz von Schaum an elektrischen Anlagen ist richtig?",
-  options: [
-    "Schaum ist ideal, weil er nicht leitet",
-    "Schaum ist wegen Wasseranteil kritisch und an elektrischen Anlagen grundsätzlich zu vermeiden",
-    "Schaum ist bei Hochspannung immer erlaubt, bei Niederspannung nicht",
-    "Schaum ist nur draußen verboten"
-  ],
-  correct: 1,
-  explain: "Schaum enthält Wasser und kann leitfähig sein; dadurch steigt das Risiko eines Stromflusses über das Löschmittel. Deshalb ist Schaum an elektrischen Anlagen grundsätzlich kritisch und wird nur nach Freigabe/spannungsfrei eingesetzt."
-},
-{
-  id: "q067",
-  area: "Elektrische Anlagen – Pulver",
-  source: "Truppführer: Löschmittel Pulver",
-  text: "Warum ist ABC-Pulver an elektrischen Anlagen nur eingeschränkt geeignet?",
-  options: [
-    "Weil es zu kalt ist",
-    "Weil es leitfähige Beläge bilden kann und daher nur bei Niederspannung eingesetzt werden soll",
-    "Weil es immer explosionsartig reagiert",
-    "Weil es die Sicht verbessert"
-  ],
-  correct: 1,
-  explain: "ABC-Pulver kann leitfähige Schmelzbeläge erzeugen und ist deshalb nur im Niederspannungsbereich vorgesehen. Zusätzlich führt Pulver zu starker Verschmutzung, weshalb der Einsatz häufig nur mit Zustimmung/Abwägung erfolgt."
-},
-{
-  id: "q068",
-  area: "Elektrische Anlagen – CO₂",
-  source: "Truppführer: Löschmittel CO₂",
-  text: "Welche Aussage zu CO₂ als Löschmittel bei elektrischen Anlagen ist korrekt?",
-  options: [
-    "CO₂ ist elektrisch nicht leitend; es gelten dennoch Sicherheitsabstände",
-    "CO₂ leitet stark und ist deshalb verboten",
-    "CO₂ darf nur im Freien eingesetzt werden",
-    "CO₂ wirkt nur durch Kühlen"
-  ],
-  correct: 0,
-  explain: "CO₂ ist nicht elektrisch leitend und deshalb grundsätzlich geeignet. Trotzdem bleiben Sicherheitsabstände erforderlich, weil die Gefährdung auch durch die Anlage selbst (Spannung/Überschlag) bestehen bleibt."
-},
+  // -------- Elektrische Anlagen – Abstände + Sonderfälle + Löschmittelregeln --------
+  {
+    id: "q058",
+    area: "Elektrische Anlagen – Annäherungsabstand",
+    source: "Truppführer: Abstände zu elektrischen Anlagen",
+    text: "Welcher Mindestabstand ist bei Niederspannung grundsätzlich einzuhalten?",
+    options: ["0,5 m", "1 m", "3 m", "5 m"],
+    correct: 1,
+    explain: "Bei Niederspannung ist ein Mindestabstand von 1 m einzuhalten. Hintergrund ist die Gefahr eines Spannungsüberschlags bzw. das Arbeiten in der Nähe spannungsführender Teile."
+  },
+  {
+    id: "q059",
+    area: "Elektrische Anlagen – Annäherungsabstand (HS)",
+    source: "Truppführer: Abstände zu elektrischen Anlagen",
+    text: "Welche Annäherung ist bei Hochspannung bis 110 kV höchstens zulässig?",
+    options: ["1 m", "2 m", "3 m", "5 m"],
+    correct: 2,
+    explain: "Bei Hochspannung bis 110 kV gilt ein Annäherungsabstand von 3 m. Der Abstand schützt vor Lichtbogen/Stromüberschlag, der auch ohne Berührung auftreten kann."
+  },
+  {
+    id: "q060",
+    area: "Elektrische Anlagen – Annäherungsabstand (HS)",
+    source: "Truppführer: Abstände zu elektrischen Anlagen",
+    text: "Welche Annäherung ist bei Hochspannung >110 kV bis 230 kV höchstens zulässig?",
+    options: ["2 m", "3 m", "4 m", "6 m"],
+    correct: 2,
+    explain: "Für >110 kV bis 230 kV sind 4 m Abstand einzuhalten. Mit steigender Spannung steigt die Überschlagsgefahr, daher werden die Abstände größer."
+  },
+  {
+    id: "q061",
+    area: "Elektrische Anlagen – Annäherungsabstand (HS)",
+    source: "Truppführer: Abstände zu elektrischen Anlagen",
+    text: "Welche Annäherung ist bei Hochspannung >230 kV bis 400 kV höchstens zulässig?",
+    options: ["3 m", "4 m", "5 m", "8 m"],
+    correct: 2,
+    explain: "Für >230 kV bis 400 kV sind 5 m Abstand einzuhalten. Das ist ein häufig abgefragter Wert, weil er in der Praxis zur Absperrentscheidung herangezogen wird."
+  },
+  {
+    id: "q062",
+    area: "Elektrische Anlagen – Freileitung am Boden",
+    source: "Truppführer: Freileitungen/Schrittspannung",
+    text: "Welche Besonderheit gilt, wenn eine herabhängende Leitung den Boden berührt?",
+    options: [
+      "Gefahr nur bei direkter Berührung",
+      "Gefahr durch Schrittspannung: Abstand mindestens 10 m einhalten",
+      "Gefahr ist geringer, weil die Leitung geerdet ist",
+      "Man kann die Leitung mit Holz anfassen"
+    ],
+    correct: 1,
+    explain: "Berührt eine Leitung den Boden, kann sich ein Spannungsrichter bilden – gefährlich ist dann auch die Spannung zwischen den Füßen (Schrittspannung). Deshalb ist ein Abstand von mindestens 10 m einzuhalten und der Bereich abzusperren."
+  },
+  {
+    id: "q063",
+    area: "Elektrische Anlagen – Unklare Spannung",
+    source: "Truppführer: Abstandsregel bei unbekannter Spannung",
+    text: "Welche Regel ist bei unbekannter Spannungslage (z. B. beschädigte Freileitung) sinnvoll?",
+    options: [
+      "1 m Abstand reicht immer",
+      "5 m Abstand einhalten und absperren, bis die Anlage gesichert ist",
+      "Nur Maschinist hält Abstand, Trupps dürfen näher ran",
+      "Vollstrahl einsetzen, um Funken zu vermeiden"
+    ],
+    correct: 1,
+    explain: "Wenn nicht absolut sicher ist, dass die Anlage spannungsfrei ist, gilt: Abstand halten und absperren. Praktisch wird bei unbekannter Spannungslage ein großzügiger Abstand (typisch 5 m) gewählt, bis Fachkräfte freigeben."
+  },
+  {
+    id: "q064",
+    area: "Elektrische Anlagen – Löschangriff Wasser (C-Strahlrohr)",
+    source: "Truppführer: Löschmittelabstände Wasser",
+    text: "Welche Mindestabstände gelten beim Einsatz eines genormten C-Strahlrohrs mit Sprühstrahl?",
+    options: [
+      "Niederspannung 1 m, Hochspannung 5 m",
+      "Niederspannung 5 m, Hochspannung 10 m",
+      "Niederspannung 0,5 m, Hochspannung 3 m",
+      "Niederspannung 3 m, Hochspannung 6 m"
+    ],
+    correct: 0,
+    explain: "Beim Sprühstrahl sind die Tropfen getrennt, dadurch sinkt die Leitfähigkeit gegenüber einem kompakten Strahl. Trotzdem gelten Mindestabstände: 1 m bei Niederspannung und 5 m bei Hochspannung."
+  },
+  {
+    id: "q065",
+    area: "Elektrische Anlagen – Löschangriff Wasser (C-Strahlrohr)",
+    source: "Truppführer: Löschmittelabstände Wasser",
+    text: "Welche Mindestabstände gelten beim Einsatz eines genormten C-Strahlrohrs mit Vollstrahl?",
+    options: [
+      "Niederspannung 1 m, Hochspannung 5 m",
+      "Niederspannung 5 m, Hochspannung 10 m",
+      "Niederspannung 2 m, Hochspannung 4 m",
+      "Niederspannung 3 m, Hochspannung 6 m"
+    ],
+    correct: 1,
+    explain: "Ein kompakter Vollstrahl leitet sehr gut und begünstigt Überschlag. Daher gelten größere Abstände: 5 m bei Niederspannung und 10 m bei Hochspannung."
+  },
+  {
+    id: "q066",
+    area: "Elektrische Anlagen – Schaum",
+    source: "Truppführer: Löschmittel Schaum",
+    text: "Welche Aussage zum Einsatz von Schaum an elektrischen Anlagen ist richtig?",
+    options: [
+      "Schaum ist ideal, weil er nicht leitet",
+      "Schaum ist wegen Wasseranteil kritisch und an elektrischen Anlagen grundsätzlich zu vermeiden",
+      "Schaum ist bei Hochspannung immer erlaubt, bei Niederspannung nicht",
+      "Schaum ist nur draußen verboten"
+    ],
+    correct: 1,
+    explain: "Schaum enthält Wasser und kann leitfähig sein; dadurch steigt das Risiko eines Stromflusses über das Löschmittel. Deshalb ist Schaum an elektrischen Anlagen grundsätzlich kritisch und wird nur nach Freigabe/spannungsfrei eingesetzt."
+  },
+  {
+    id: "q067",
+    area: "Elektrische Anlagen – Pulver",
+    source: "Truppführer: Löschmittel Pulver",
+    text: "Warum ist ABC-Pulver an elektrischen Anlagen nur eingeschränkt geeignet?",
+    options: [
+      "Weil es zu kalt ist",
+      "Weil es leitfähige Beläge bilden kann und daher nur bei Niederspannung eingesetzt werden soll",
+      "Weil es immer explosionsartig reagiert",
+      "Weil es die Sicht verbessert"
+    ],
+    correct: 1,
+    explain: "ABC-Pulver kann leitfähige Schmelzbeläge erzeugen und ist deshalb nur im Niederspannungsbereich vorgesehen. Zusätzlich führt Pulver zu starker Verschmutzung, weshalb der Einsatz häufig nur mit Zustimmung/Abwägung erfolgt."
+  },
+  {
+    id: "q068",
+    area: "Elektrische Anlagen – CO₂",
+    source: "Truppführer: Löschmittel CO₂",
+    text: "Welche Aussage zu CO₂ als Löschmittel bei elektrischen Anlagen ist korrekt?",
+    options: [
+      "CO₂ ist elektrisch nicht leitend; es gelten dennoch Sicherheitsabstände",
+      "CO₂ leitet stark und ist deshalb verboten",
+      "CO₂ darf nur im Freien eingesetzt werden",
+      "CO₂ wirkt nur durch Kühlen"
+    ],
+    correct: 0,
+    explain: "CO₂ ist nicht elektrisch leitend und deshalb grundsätzlich geeignet. Trotzdem bleiben Sicherheitsabstände erforderlich, weil die Gefährdung auch durch die Anlage selbst (Spannung/Überschlag) bestehen bleibt."
+  },
 
-// -------- TH – Rettungsgrundsatz, Aufgabenverteilung, patientenorientiert, typische Gefahren --------
-{
-  id: "q069",
-  area: "TH – Aufgabenverteilung in der Gruppe",
-  source: "Grundausbildung: Grundtätigkeiten TH",
-  text: "Welche Aufgabenverteilung ist im Hilfeleistungseinsatz für die Gruppe typisch?",
-  options: [
-    "Angriffstrupp: Rettung • Wassertrupp: Sicherung • Schlauchtrupp: Gerätebereitstellung/Unterstützung",
-    "Angriffstrupp: Pumpe • Wassertrupp: Innenangriff • Schlauchtrupp: Funk",
-    "Angriffstrupp: Absperren • Wassertrupp: Dokumentation • Schlauchtrupp: Führung",
-    "Alle Trupps machen gleichzeitig dasselbe"
-  ],
-  correct: 0,
-  explain: "Im TH-Einsatz ist die Aufgabenverteilung klar strukturiert: Angriffstrupp übernimmt Rettungsaufgaben, Wassertrupp sichert die Einsatzstelle, Schlauchtrupp stellt Geräte bereit und unterstützt. Dadurch laufen Sicherung und Rettung parallel, ohne Chaos."
-},
-{
-  id: "q070",
-  area: "TH – Rettungsgrundsatz",
-  source: "Grundausbildung: Rettungsgrundsatz TH",
-  text: "Welche Reihenfolge entspricht dem Rettungsgrundsatz bei der technischen Hilfeleistung?",
-  options: [
-    "Befreien – Erstversorgung – Zugang – Sichern – Übergabe",
-    "Sichern – Zugang schaffen – Erstversorgung – Befreien – Übergabe an den Rettungsdienst",
-    "Zugang – Befreien – Sichern – Erstversorgung – Übergabe",
-    "Erstversorgung – Übergabe – Befreien – Zugang – Sichern"
-  ],
-  correct: 1,
-  explain: "Der Rettungsgrundsatz beginnt mit dem Sichern der Einsatzstelle, damit Rettung überhaupt sicher möglich ist. Danach folgen Zugang, Erstversorgung, patientengerechtes Befreien und die Übergabe an den Rettungsdienst."
-},
-{
-  id: "q071",
-  area: "TH – Patientorientierte Rettung",
-  source: "Grundausbildung: patientenorientierte Rettung",
-  text: "Was bedeutet „patientenorientierte Rettung“ im TH-Einsatz am besten?",
-  options: [
-    "Schnellstmöglich schneiden, unabhängig vom Patienten",
-    "Patient wird in Ablauf eingebunden; Rettung in direkter Absprache mit Rettungsdienst/Notarzt",
-    "Feuerwehr entscheidet allein; Rettungsdienst wartet",
-    "Patient darf nicht angesprochen werden"
-  ],
-  correct: 1,
-  explain: "Patientenorientiert bedeutet: Betreuung/Kommunikation sicherstellen und Maßnahmen mit dem Rettungsdienst abstimmen. Ziel ist eine möglichst schonende Rettung, die den Zustand des Patienten berücksichtigt."
-},
-{
-  id: "q072",
-  area: "TH – Zugang/Versorgungsöffnung",
-  source: "Grundausbildung: Zugang & Versorgungsöffnung",
-  text: "Wozu dient eine „Versorgungsöffnung“ im Verlauf der Rettung bei einem Verkehrsunfall typischerweise?",
-  options: [
-    "Damit das Wasser ablaufen kann",
-    "Damit der Rettungsdienst früh medizinisch versorgen kann",
-    "Damit man das Fahrzeug besser lackieren kann",
-    "Damit der Motor schneller abkühlt"
-  ],
-  correct: 1,
-  explain: "Die Versorgungsöffnung dient dazu, früh Kontakt zum Patienten herzustellen und dem Rettungsdienst eine medizinische Versorgung zu ermöglichen. Häufig reicht dafür bereits das Entfernen einer Tür; sie kann später für eine größere Befreiungsöffnung erweitert werden."
-},
-{
-  id: "q073",
-  area: "TH – Eigensicherung (Sichern)",
-  source: "Grundausbildung: Sichern der Einsatzstelle",
-  text: "Welche Maßnahme gehört beim Punkt „Sichern“ im Rettungsgrundsatz eindeutig dazu?",
-  options: [
-    "Absicherung gegen fließenden Verkehr und Brandschutz sicherstellen",
-    "Hydraulik sofort ansetzen, um Zeit zu sparen",
-    "Patient ohne Stabilisierung herausziehen",
-    "Werkzeug im Gefahrenbereich ungeordnet ablegen"
-  ],
-  correct: 0,
-  explain: "„Sichern“ umfasst u. a. Verkehrsabsicherung, Brandschutz und das Beherrschen von Gefahren (z. B. instabile Fahrzeuge, austretende Betriebsstoffe). Ohne diese Basis steigt das Risiko für Einsatzkräfte und Patienten deutlich."
-},
-{
-  id: "q074",
-  area: "TH – Gefahr: scharfe Kanten",
-  source: "Grundausbildung: Scharfe Kanten",
-  text: "Welche Gefahr ist beim Einsatz hydraulischer Rettungsgeräte und Trennschleifer besonders zu beachten?",
-  options: [
-    "Scharfe Kanten mit Schnittgefahr",
-    "Nur Lärmbelästigung",
-    "Ausschließlich Wärmeabstrahlung",
-    "Keine besondere Gefahr"
-  ],
-  correct: 0,
-  explain: "Beim Trennen/Öffnen entstehen scharfe Kanten, die zu Schnittverletzungen führen können. Daher sind geeignete PSA, Abdeckungen (z. B. Decken/Schutzhüllen) und ein kontrollierter Arbeitsablauf wichtig."
-},
-{
-  id: "q075",
-  area: "TH – Gefahr: unkontrollierte Bewegung von Lasten",
-  source: "Grundausbildung: Unkontrolliertes Bewegen von Lasten",
-  text: "Warum ist das Unterbauen einer angehobenen Last an mindestens zwei Stellen wichtig?",
-  options: [
-    "Damit es schneller geht",
-    "Um ein Kippen/unkontrolliertes Absacken zu verhindern",
-    "Damit mehr Leute gleichzeitig arbeiten können",
-    "Weil es optisch besser aussieht"
-  ],
-  correct: 1,
-  explain: "Angehobene Lasten können durch Bedienfehler, Materialversagen oder instabile Auflage unkontrolliert kippen oder fallen. Unterbauen an mindestens zwei Punkten reduziert dieses Risiko deutlich."
-},
-{
-  id: "q076",
-  area: "TH – Gefahr: Seile/Anschlagmittel",
-  source: "Grundausbildung: Seile & Anschlagmittel",
-  text: "Welche Aussage zu Seilen, Anschlagmitteln und Festpunkten ist richtig?",
-  options: [
-    "Im Zugvorgang dürfen sich Personen im Gefahrenbereich aufhalten",
-    "Umlenkrollen ändern nichts an den Kräften",
-    "Festpunkte/Anschlagmittel sind kritisch; während des Zugvorgangs dürfen sich außer dem Bediener keine Personen im Gefahrenbereich aufhalten",
-    "Seile reißen nie, wenn sie neu sind"
-  ],
-  correct: 2,
-  explain: "Anschlagmittel und Festpunkte sind sicherheitskritisch, weil hohe Kräfte wirken und versagen können. Während eines Zugvorgangs muss der Gefahrenbereich frei bleiben, um Verletzungen durch Rückschlag/Bruch zu vermeiden."
-},
-{
-  id: "q077",
-  area: "TH – Gefahr: Brand/Explosion durch Betriebsstoffe",
-  source: "Grundausbildung: auslaufende brennbare Flüssigkeiten",
-  text: "Warum sind auslaufende brennbare Flüssigkeiten bei TH-Einsätzen besonders gefährlich?",
-  options: [
-    "Weil sie nicht brennen können",
-    "Weil sie Brand- und Explosionsgefahr verursachen und geeignete Maßnahmen (z. B. Brandschutz) erfordern",
-    "Weil sie das Fahrzeug automatisch kühlen",
-    "Weil sie nur Umweltgefahr, aber keine Einsatzgefahr sind"
-  ],
-  correct: 1,
-  explain: "Auslaufende Betriebsstoffe können zündfähige Dampf-Luft-Gemische bilden und zu Brand/Explosion führen. Deshalb sind Brandschutz, Zündquellenvermeidung und ggf. Auffangen/Abstreuen wichtige Sofortmaßnahmen."
-},
+  // -------- TH – Rettungsgrundsatz, Aufgabenverteilung, patientenorientiert, typische Gefahren --------
+  {
+    id: "q069",
+    area: "TH – Aufgabenverteilung in der Gruppe",
+    source: "Grundausbildung: Grundtätigkeiten TH",
+    text: "Welche Aufgabenverteilung ist im Hilfeleistungseinsatz für die Gruppe typisch?",
+    options: [
+      "Angriffstrupp: Rettung • Wassertrupp: Sicherung • Schlauchtrupp: Gerätebereitstellung/Unterstützung",
+      "Angriffstrupp: Pumpe • Wassertrupp: Innenangriff • Schlauchtrupp: Funk",
+      "Angriffstrupp: Absperren • Wassertrupp: Dokumentation • Schlauchtrupp: Führung",
+      "Alle Trupps machen gleichzeitig dasselbe"
+    ],
+    correct: 0,
+    explain: "Im TH-Einsatz ist die Aufgabenverteilung klar strukturiert: Angriffstrupp übernimmt Rettungsaufgaben, Wassertrupp sichert die Einsatzstelle, Schlauchtrupp stellt Geräte bereit und unterstützt. Dadurch laufen Sicherung und Rettung parallel, ohne Chaos."
+  },
+  {
+    id: "q070",
+    area: "TH – Rettungsgrundsatz",
+    source: "Grundausbildung: Rettungsgrundsatz TH",
+    text: "Welche Reihenfolge entspricht dem Rettungsgrundsatz bei der technischen Hilfeleistung?",
+    options: [
+      "Befreien – Erstversorgung – Zugang – Sichern – Übergabe",
+      "Sichern – Zugang schaffen – Erstversorgung – Befreien – Übergabe an den Rettungsdienst",
+      "Zugang – Befreien – Sichern – Erstversorgung – Übergabe",
+      "Erstversorgung – Übergabe – Befreien – Zugang – Sichern"
+    ],
+    correct: 1,
+    explain: "Der Rettungsgrundsatz beginnt mit dem Sichern der Einsatzstelle, damit Rettung überhaupt sicher möglich ist. Danach folgen Zugang, Erstversorgung, patientengerechtes Befreien und die Übergabe an den Rettungsdienst."
+  },
+  {
+    id: "q071",
+    area: "TH – Patientorientierte Rettung",
+    source: "Grundausbildung: patientenorientierte Rettung",
+    text: "Was bedeutet „patientenorientierte Rettung“ im TH-Einsatz am besten?",
+    options: [
+      "Schnellstmöglich schneiden, unabhängig vom Patienten",
+      "Patient wird in Ablauf eingebunden; Rettung in direkter Absprache mit Rettungsdienst/Notarzt",
+      "Feuerwehr entscheidet allein; Rettungsdienst wartet",
+      "Patient darf nicht angesprochen werden"
+    ],
+    correct: 1,
+    explain: "Patientenorientiert bedeutet: Betreuung/Kommunikation sicherstellen und Maßnahmen mit dem Rettungsdienst abstimmen. Ziel ist eine möglichst schonende Rettung, die den Zustand des Patienten berücksichtigt."
+  },
+  {
+    id: "q072",
+    area: "TH – Zugang/Versorgungsöffnung",
+    source: "Grundausbildung: Zugang & Versorgungsöffnung",
+    text: "Wozu dient eine „Versorgungsöffnung“ im Verlauf der Rettung bei einem Verkehrsunfall typischerweise?",
+    options: [
+      "Damit das Wasser ablaufen kann",
+      "Damit der Rettungsdienst früh medizinisch versorgen kann",
+      "Damit man das Fahrzeug besser lackieren kann",
+      "Damit der Motor schneller abkühlt"
+    ],
+    correct: 1,
+    explain: "Die Versorgungsöffnung dient dazu, früh Kontakt zum Patienten herzustellen und dem Rettungsdienst eine medizinische Versorgung zu ermöglichen. Häufig reicht dafür bereits das Entfernen einer Tür; sie kann später für eine größere Befreiungsöffnung erweitert werden."
+  },
+  {
+    id: "q073",
+    area: "TH – Eigensicherung (Sichern)",
+    source: "Grundausbildung: Sichern der Einsatzstelle",
+    text: "Welche Maßnahme gehört beim Punkt „Sichern“ im Rettungsgrundsatz eindeutig dazu?",
+    options: [
+      "Absicherung gegen fließenden Verkehr und Brandschutz sicherstellen",
+      "Hydraulik sofort ansetzen, um Zeit zu sparen",
+      "Patient ohne Stabilisierung herausziehen",
+      "Werkzeug im Gefahrenbereich ungeordnet ablegen"
+    ],
+    correct: 0,
+    explain: "„Sichern“ umfasst u. a. Verkehrsabsicherung, Brandschutz und das Beherrschen von Gefahren (z. B. instabile Fahrzeuge, austretende Betriebsstoffe). Ohne diese Basis steigt das Risiko für Einsatzkräfte und Patienten deutlich."
+  },
+  {
+    id: "q074",
+    area: "TH – Gefahr: scharfe Kanten",
+    source: "Grundausbildung: Scharfe Kanten",
+    text: "Welche Gefahr ist beim Einsatz hydraulischer Rettungsgeräte und Trennschleifer besonders zu beachten?",
+    options: [
+      "Scharfe Kanten mit Schnittgefahr",
+      "Nur Lärmbelästigung",
+      "Ausschließlich Wärmeabstrahlung",
+      "Keine besondere Gefahr"
+    ],
+    correct: 0,
+    explain: "Beim Trennen/Öffnen entstehen scharfe Kanten, die zu Schnittverletzungen führen können. Daher sind geeignete PSA, Abdeckungen (z. B. Decken/Schutzhüllen) und ein kontrollierter Arbeitsablauf wichtig."
+  },
+  {
+    id: "q075",
+    area: "TH – Gefahr: unkontrollierte Bewegung von Lasten",
+    source: "Grundausbildung: Unkontrolliertes Bewegen von Lasten",
+    text: "Warum ist das Unterbauen einer angehobenen Last an mindestens zwei Stellen wichtig?",
+    options: [
+      "Damit es schneller geht",
+      "Um ein Kippen/unkontrolliertes Absacken zu verhindern",
+      "Damit mehr Leute gleichzeitig arbeiten können",
+      "Weil es optisch besser aussieht"
+    ],
+    correct: 1,
+    explain: "Angehobene Lasten können durch Bedienfehler, Materialversagen oder instabile Auflage unkontrolliert kippen oder fallen. Unterbauen an mindestens zwei Punkten reduziert dieses Risiko deutlich."
+  },
+  {
+    id: "q076",
+    area: "TH – Gefahr: Seile/Anschlagmittel",
+    source: "Grundausbildung: Seile & Anschlagmittel",
+    text: "Welche Aussage zu Seilen, Anschlagmitteln und Festpunkten ist richtig?",
+    options: [
+      "Im Zugvorgang dürfen sich Personen im Gefahrenbereich aufhalten",
+      "Umlenkrollen ändern nichts an den Kräften",
+      "Festpunkte/Anschlagmittel sind kritisch; während des Zugvorgangs dürfen sich außer dem Bediener keine Personen im Gefahrenbereich aufhalten",
+      "Seile reißen nie, wenn sie neu sind"
+    ],
+    correct: 2,
+    explain: "Anschlagmittel und Festpunkte sind sicherheitskritisch, weil hohe Kräfte wirken und versagen können. Während eines Zugvorgangs muss der Gefahrenbereich frei bleiben, um Verletzungen durch Rückschlag/Bruch zu vermeiden."
+  },
+  {
+    id: "q077",
+    area: "TH – Gefahr: Brand/Explosion durch Betriebsstoffe",
+    source: "Grundausbildung: auslaufende brennbare Flüssigkeiten",
+    text: "Warum sind auslaufende brennbare Flüssigkeiten bei TH-Einsätzen besonders gefährlich?",
+    options: [
+      "Weil sie nicht brennen können",
+      "Weil sie Brand- und Explosionsgefahr verursachen und geeignete Maßnahmen (z. B. Brandschutz) erfordern",
+      "Weil sie das Fahrzeug automatisch kühlen",
+      "Weil sie nur Umweltgefahr, aber keine Einsatzgefahr sind"
+    ],
+    correct: 1,
+    explain: "Auslaufende Betriebsstoffe können zündfähige Dampf-Luft-Gemische bilden und zu Brand/Explosion führen. Deshalb sind Brandschutz, Zündquellenvermeidung und ggf. Auffangen/Abstreuen wichtige Sofortmaßnahmen."
+  },
 
-// -------- Brennen & Löschen – vertiefende, nicht-doppelte Prüfungsfragen --------
-{
-  id: "q078",
-  area: "FwDV 2 – Brennen & Löschen",
-  source: "Truppführer: Löschwirkungen",
-  text: "Welche Aussage beschreibt den Unterschied zwischen Sprühstrahl und Vollstrahl fachlich am besten?",
-  options: [
-    "Sprühstrahl hat weniger Oberfläche als Vollstrahl",
-    "Sprühstrahl vergrößert die Oberfläche des Wassers und verbessert dadurch die Kühlwirkung",
-    "Vollstrahl ist immer sicherer als Sprühstrahl",
-    "Sprühstrahl dient nur der Optik"
-  ],
-  correct: 1,
-  explain: "Sprühstrahl zerlegt Wasser in Tropfen und vergrößert die Oberfläche; dadurch wird Wärme schneller aufgenommen und die Kühlung verbessert. Vollstrahl hat mehr Wurfweite, birgt aber z. B. in elektrischen Bereichen höhere Leitfähigkeitsrisiken."
-},
-{
-  id: "q079",
-  area: "FwDV 2 – Brennen & Löschen",
-  source: "Grundausbildung: brennbare Flüssigkeiten/Oberfläche",
-  text: "Warum erhöht eine vergrößerte Oberfläche brennbarer Flüssigkeiten (z. B. durch Kapillarwirkung/Dochtwirkung) die Brandgefahr?",
-  options: [
-    "Weil dadurch weniger Dampf entsteht",
-    "Weil dadurch mehr Dampf entsteht und schneller ein zündfähiges Gemisch gebildet werden kann",
-    "Weil dadurch Sauerstoff verdrängt wird",
-    "Weil dadurch die Zündenergie steigt"
-  ],
-  correct: 1,
-  explain: "Je größer die Oberfläche, desto intensiver ist die Verdampfung. Dadurch kann schneller ein zündfähiges Dampf-Luft-Gemisch entstehen, was die Entzündungs- und Brandausbreitungsgefahr erhöht."
-},
-{
-  id: "q080",
-  area: "FwDV 2 – Löschmittelwahl / elektrische Anlagen",
-  source: "Truppführer: Löschmittel an elektrischen Anlagen",
-  text: "Welche Aussage ist als Grundsatz zum Löschmitteleinsatz an elektrischen Anlagen richtig?",
-  options: [
-    "Schaum ist immer die beste Wahl",
-    "Vollstrahl ist sicherer als Sprühstrahl",
-    "Löschmittel erhöhen das Risiko; deshalb nur mit passenden Mindestabständen und möglichst erst nach Freigabe/spannungsfrei",
-    "Abstände sind nur bei Hochspannung relevant"
-  ],
-  correct: 2,
-  explain: "Der Löschmitteleinsatz erzeugt ein zusätzliches Risiko, weil sich Leitfähigkeit und Überschlagsgefahr erhöhen können. Daher gelten Mindestabstände und – wenn möglich – Vorgehen erst nach Freigabe bzw. hergestellter Spannungsfreiheit."
-}
+  // -------- Brennen & Löschen – vertiefende, nicht-doppelte Prüfungsfragen --------
+  {
+    id: "q078",
+    area: "FwDV 2 – Brennen & Löschen",
+    source: "Truppführer: Löschwirkungen",
+    text: "Welche Aussage beschreibt den Unterschied zwischen Sprühstrahl und Vollstrahl fachlich am besten?",
+    options: [
+      "Sprühstrahl hat weniger Oberfläche als Vollstrahl",
+      "Sprühstrahl vergrößert die Oberfläche des Wassers und verbessert dadurch die Kühlwirkung",
+      "Vollstrahl ist immer sicherer als Sprühstrahl",
+      "Sprühstrahl dient nur der Optik"
+    ],
+    correct: 1,
+    explain: "Sprühstrahl zerlegt Wasser in Tropfen und vergrößert die Oberfläche; dadurch wird Wärme schneller aufgenommen und die Kühlung verbessert. Vollstrahl hat mehr Wurfweite, birgt aber z. B. in elektrischen Bereichen höhere Leitfähigkeitsrisiken."
+  },
+  {
+    id: "q079",
+    area: "FwDV 2 – Brennen & Löschen",
+    source: "Grundausbildung: brennbare Flüssigkeiten/Oberfläche",
+    text: "Warum erhöht eine vergrößerte Oberfläche brennbarer Flüssigkeiten (z. B. durch Kapillarwirkung/Dochtwirkung) die Brandgefahr?",
+    options: [
+      "Weil dadurch weniger Dampf entsteht",
+      "Weil dadurch mehr Dampf entsteht und schneller ein zündfähiges Gemisch gebildet werden kann",
+      "Weil dadurch Sauerstoff verdrängt wird",
+      "Weil dadurch die Zündenergie steigt"
+    ],
+    correct: 1,
+    explain: "Je größer die Oberfläche, desto intensiver ist die Verdampfung. Dadurch kann schneller ein zündfähiges Dampf-Luft-Gemisch entstehen, was die Entzündungs- und Brandausbreitungsgefahr erhöht."
+  },
+  {
+    id: "q080",
+    area: "FwDV 2 – Löschmittelwahl / elektrische Anlagen",
+    source: "Truppführer: Löschmittel an elektrischen Anlagen",
+    text: "Welche Aussage ist als Grundsatz zum Löschmitteleinsatz an elektrischen Anlagen richtig?",
+    options: [
+      "Schaum ist immer die beste Wahl",
+      "Vollstrahl ist sicherer als Sprühstrahl",
+      "Löschmittel erhöhen das Risiko; deshalb nur mit passenden Mindestabständen und möglichst erst nach Freigabe/spannungsfrei",
+      "Abstände sind nur bei Hochspannung relevant"
+    ],
+    correct: 2,
+    explain: "Der Löschmitteleinsatz erzeugt ein zusätzliches Risiko, weil sich Leitfähigkeit und Überschlagsgefahr erhöhen können. Daher gelten Mindestabstände und – wenn möglich – Vorgehen erst nach Freigabe bzw. hergestellter Spannungsfreiheit."
+  }
 
 ];
 
